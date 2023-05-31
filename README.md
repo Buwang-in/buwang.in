@@ -10,13 +10,13 @@ Buwang.in is a repository that hosts the source code for an application called "
 
     - [Link to ML Branch](https://github.com/Rabbids13/Buwang.in/tree/machine-learning)
 
-2. **CC**: The CC branch includes projects related to cloud computing for the Buwang.in application. This may involve serverless computing, cloud storage integration, and scalability enhancements.
+2. **API**: The API branch contains the backend code for the Buwang.in application, including APIs and server-side logic for handling data and serving requests.
 
-    - [Link to CC Branch](https://github.com/username/Buwang.in/tree/CC)
+    - [Link to API Branch](https://github.com/Rabbids13/Buwang.in/tree/api)
 
-3. **MD**: The MD branch focuses on mobile development for the Buwang.in application. This includes the development of the Android and iOS versions of the app, integration with mobile APIs, and user interface design.
+3. **Mobile**: The Mobile branch contains the mobile app code for the Buwang.in application. This includes the Android and iOS versions of the app, along with the necessary UI/UX components and integrations with backend services.
 
-    - [Link to MD Branch](https://github.com/username/Buwang.in/tree/MD)
+    - [Link to Mobile Branch](https://github.com/Rabbids13/Buwang.in/tree/mobile)
 
 ## License
 
