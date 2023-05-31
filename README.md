@@ -16,10 +16,6 @@ Buwang.in is a repository that hosts the source code for an application called "
 
     - [Link to Notebook Folder](https://github.com/Rabbids13/Buwang.in/tree/machine-learning/Notebook)
 
-## Contribution
-
-Contributions to the Buwang.in repository are welcome. If you would like to contribute, you can fork the repository and submit a pull request to the relevant branch for the feature or improvement you want to propose.
-
 ## License
 
 The Buwang.in repository is licensed under the [MIT License](https://github.com/Rabbids13/Buwang.in/blob/main/LICENSE).
