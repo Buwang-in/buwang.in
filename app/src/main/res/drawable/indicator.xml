@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#017802" /> <!-- Ganti dengan warna atau gambar yang Anda inginkan -->
+    <size android:width="8dp"
+        android:height="8dp" /> <!-- Sesuaikan dengan ukuran yang diinginkan -->
+    <corners android:radius="6dp" /> <!-- Sesuaikan dengan radius yang diinginkan -->
+</shape>

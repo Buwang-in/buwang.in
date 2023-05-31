@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Buang.In</string>
+    <string name="selamat_dat">
+selamat datang \ndi aplikasi Buwang.in
+</string>
+    <string name="kami_senang">
+Kami senang Anda bergabung untuk melesatrikan lingkungan
+</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slide2">Deteksi Sampah untuk mengetahui jenisnya</string>
+    <string name="subTitleSlide2">ketahui jenis sampah untuk memilih cara daur ulang yang tepat</string>
+    <string name="title_slide3">Memperoleh Poin dari setiap\n transaksi</string>
+    <string name="sub_title_Slide3">Poin dapat ditukarkan menjadi uang digital, voucher, dan Paket Data</string>
+    <string name="image_login">image_login</string>
+    <string name="welcome">Selamat Datang!</string>
+    <string name="sub_welcome">Silahkan Masuk kembali</string>
+    <string name="title_email">Email / Username</string>
+    <string name="title_password">Password</string>
+    <string name="forgot_pass">Lupa kata sandi?</string>
+    <string name="btn_title_masuk">Masuk</string>
+    <string name="belum_punya_akun">Belum punya akun? Daftar</string>
+    <string name="title_daftar">Daftar</string>
+    <string name="subtitle_daftar">Ayo daftarkan diri anda!</string>
+    <string name="daftar_username">Username</string>
+    <string name="daftar_email">Email</string>
+    <string name="daftar_password">Password</string>
+    <string name="btn_daftar">Daftar</string>
+    <string name="text_skip">skip</string>
+    <string name="text_next">next</string>
+</resources>
