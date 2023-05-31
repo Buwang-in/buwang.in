@@ -2,7 +2,7 @@
 
 ## Description
 
-Buwang.in is a repository that hosts the source code for an application called "Buwang.in." The application aims to promote sustainable living by providing tools and resources for waste management and recycling. It offers features to help users effectively manage their waste, learn about sustainable practices, and locate nearby recycling centers and waste collection points.
+Buwang.in is a repository that hosts the source code for an application called "Buwang.in." The application aims to promote sustainable living by providing tools and resources for waste management and recycling. 
 
 ## Branches
 
