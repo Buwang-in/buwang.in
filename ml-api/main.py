@@ -63,8 +63,7 @@ async def detect_food_return_base64_img(file: bytes = File(...)):
     input_image = get_image_from_bytes(file)
     results = model(input_image)
     results.render()  # updates results.imgs with boxes and labels
-    for img in results.imgs:
-        bytes_io = io.BytesIO()
-        img_base64 = Image.fromarray(img)
-        img_base64.save(bytes_io, format="jpeg")
+    bytes_io = io.BytesIO()
+    img_base64 = Image.fromarray(results.image)  # Use the appropriate attribute here
+    img_base64.save(bytes_io, format="jpeg")
     return Response(content=bytes_io.getvalue(), media_type="image/jpeg")
