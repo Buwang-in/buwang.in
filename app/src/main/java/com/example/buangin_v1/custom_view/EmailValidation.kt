@@ -1,4 +1,4 @@
-package com.example.submissionstoryapp.customview
+package com.example.buangin_v1.custom_view
 
 import android.content.Context
 import android.graphics.Canvas

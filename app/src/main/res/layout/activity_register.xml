@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="20dp"
-    tools:context=".Register">
+    tools:context=".ui.Register">
 
     <TextView
         android:id="@+id/text_title_daftar"
@@ -18,7 +18,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/text_sub_daftar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="20dp"
+        android:paddingTop="40dp"/>
 
     <TextView
         android:id="@+id/text_sub_daftar"
@@ -70,7 +71,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ed_register_name" />
 
-    <com.example.submissionstoryapp.customview.EmailValidation
+    <com.example.buangin_v1.custom_view.EmailValidation
         android:id="@+id/ed_register_email"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -95,13 +96,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ed_register_email" />
 
-    <com.example.submissionstoryapp.customview.PasswordValidation
+    <com.example.buangin_v1.custom_view.PasswordValidation
         android:id="@+id/ed_register_password"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:alpha="0"
         android:background="@drawable/edit_text"
-        android:drawableRight="@drawable/remove_eye"
+        android:drawableEnd="@drawable/remove_eye"
         android:inputType="textPassword"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,13 +120,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ed_register_password" />
 
-    <com.example.submissionstoryapp.customview.PasswordValidation
+    <com.example.buangin_v1.custom_view.PasswordValidation
         android:id="@+id/ed_register_password_confirm"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:alpha="0"
         android:background="@drawable/edit_text"
-        android:drawableRight="@drawable/remove_eye"
+        android:drawableEnd="@drawable/remove_eye"
         android:inputType="textPassword"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -149,10 +150,9 @@
 
     <RelativeLayout
         android:id="@+id/view_loading"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:alpha="0"
-        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -202,8 +202,7 @@
         android:alpha="0"
         android:text="Sudah Punya akun? Masuk"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="12sp"
+        style="@style/low"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_register" />

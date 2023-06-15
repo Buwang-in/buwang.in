@@ -1,14 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".akun">
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:id="@+id/layout_head"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="300dp"
 
-</FrameLayout>
+        android:background="@color/green1">
+
+        <RelativeLayout
+            android:id="@+id/RL_imageView"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_profile_dp"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/des_profil"
+                android:src="@drawable/zakar"
+                android:scaleType="centerCrop" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_profile_pic"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110dp"
+                android:elevation="10dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_show_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RL_imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:text="Welcome, User!"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/card"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/RL_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/ic_profile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/person"
+                android:contentDescription="@string/des_profil" />
+
+            <TextView
+                android:id="@+id/textView_show_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/ic_profile"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                style="@style/medium_gray"
+               android:text="@string/nama" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_name"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/RL_name"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/RL_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ic_email"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/email"
+                android:contentDescription="@string/des_profil" />
+
+            <TextView
+                android:id="@+id/textView_show_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/ic_email"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                style="@style/medium_gray"
+                android:layout_marginTop="20dp"
+                android:text="@string/email" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_email"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/RL_email"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/RL_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_email"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ic_dob"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/phone"
+                android:contentDescription="@string/des_profil" />
+
+            <TextView
+                android:id="@+id/textView_show_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/ic_dob"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                style="@style/medium_gray"
+                android:text="@string/telephone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_dob"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/RL_dob"
+            android:background="@android:color/darker_gray" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:layout_margin="20dp"
+        app:backgroundTint="@color/green"
+        app:cornerRadius="8dp"
+        android:text="Keluar"
+        android:textAllCaps="false"
+        style="@style/button_white"
+        app:icon="@drawable/logout"
+        app:iconTint="@color/white"
+        app:iconGravity="textStart"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>

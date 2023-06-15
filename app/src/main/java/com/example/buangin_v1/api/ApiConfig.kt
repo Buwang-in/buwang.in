@@ -14,11 +14,17 @@ class ApiConfig {
                 .addInterceptor(loggingInterceptor)
                 .build()
             val retrofit = Retrofit.Builder()
-                .baseUrl("https://story-api.dicoding.dev/v1/")
+//                .baseUrl("https://story-api.dicoding.dev/v1/")
+                .baseUrl("https://buwangin-cc-api-dwkesfpftq-et.a.run.app/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
             return retrofit.create(ApiService::class.java)
+
+
+            //buat retrofit denag API beda unttuk ambil data list
+            // ng api config kei getList
+
         }
     }
 }

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".ui.HasilScan">
+
+    <ImageView
+        android:id="@+id/img_hasil"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/ket_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pesan_succes"
+        android:drawableStart="@drawable/check"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        style="@style/button"
+        />
+
+
+    <TextView
+        android:id="@+id/jenis_sampah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jenis_sampah"
+        style="@style/jenis_sampah"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/harga_sampah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/harga_sampah"
+        style="@style/hasil"
+        android:gravity="center"
+        />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginVertical="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/artikelTerkait"
+            style="@style/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_artikel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/viewall"
+            style="@style/view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_all"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/artikel_terkait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/artikelTerkait"
+            tools:listitem="@layout/card_artikel"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        app:backgroundTint="@color/green"
+        app:cornerRadius="8dp"
+        android:text="@string/simpan"
+        android:textAllCaps="false"
+        style="@style/button_white"
+        app:icon="@drawable/simpan_icon"
+        app:iconTint="@color/white"
+        app:iconGravity="textStart"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>

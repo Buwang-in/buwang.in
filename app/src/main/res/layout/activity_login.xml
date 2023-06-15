@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".Login">
+    tools:context=".ui.Login">
 
     <TextView
         android:id="@+id/title_welcome"
@@ -61,7 +61,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginAnim" />
 
-    <com.example.submissionstoryapp.customview.EmailValidation
+    <com.example.buangin_v1.custom_view.EmailValidation
         android:id="@+id/ed_login_email"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -85,7 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ed_login_email" />
 
-    <com.example.submissionstoryapp.customview.PasswordValidation
+    <com.example.buangin_v1.custom_view.PasswordValidation
         android:id="@+id/ed_login_password"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -94,7 +94,7 @@
         android:drawableEnd="@drawable/remove_eye"
         android:inputType="textPassword"
         android:padding="10dp"
-        android:textSize="12sp"
+        style="@style/low"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title_password" />
@@ -109,8 +109,7 @@
         android:paddingVertical="10dp"
         android:text="@string/forgot_pass"
         android:textAlignment="textEnd"
-        android:textColor="@color/black"
-        android:textSize="12sp"
+        style="@style/low"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ed_login_password" />
 
@@ -128,10 +127,9 @@
 
     <RelativeLayout
         android:id="@+id/view_loading"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:alpha="0"
-        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -180,8 +178,7 @@
         android:alpha="0"
         android:text="@string/belum_punya_akun"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="12sp"
+        style="@style/low"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_masuk" />

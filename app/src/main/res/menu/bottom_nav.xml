@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/navigation_inventori"
+        android:icon="@drawable/shop_icon"
+        android:title="@string/nav_inventori" />
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/history_icon"
+        android:title="@string/nav_riwayat" />
+    <item
+        android:id="@+id/navigation_akun"
+        android:icon="@drawable/person_icon"
+        android:title="@string/nav_akun" />
 </menu>

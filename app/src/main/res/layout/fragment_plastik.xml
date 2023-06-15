@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.fragment.Plastik">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_inventory_sampah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_layout"
+        />
+
+    <ImageView
+        android:id="@+id/img_empty"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/kosong"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

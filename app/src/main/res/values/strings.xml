@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Buang.In</string>
+    <string name="app_name">Buwang.In</string>
     <string name="selamat_dat">
 selamat datang \ndi aplikasi Buwang.in
 </string>
@@ -26,5 +26,52 @@ Kami senang Anda bergabung untuk melesatrikan lingkungan
     <string name="daftar_password">Password</string>
     <string name="btn_daftar">Daftar</string>
     <string name="text_skip">skip</string>
-    <string name="text_next">next</string>
+    <string name="text_next">Next</string>
+    <string name="nav_home">Beranda</string>
+    <string name="nav_inventori">Inventori</string>
+    <string name="nav_riwayat">Riwayat</string>
+    <string name="nav_akun">Akun</string>
+    <string name="text_btn_scan">Deteksi Jenis Sampah</string>
+    <string name="description_banner">banner</string>
+    <string name="sub_poin">Poin yang diperoleh</string>
+    <string name="jml_poin">100 poin</string>
+    <string name="content_edit">Cara Penggunaan</string>
+
+    <string name="judul_artikel">Nama Pahlawan</string>
+    <string name="sub_title">Deskripsi</string>
+    <string name="pesan_succes">Identifikasi Sampah Berhasil!</string>
+    <string name="jenis_sampah">Botol</string>
+    <string name="jml_sampah">5 Sampah terdeteksi</string>
+    <string name="harga_sampah">Harga Jual: Rp. 500 / pcs</string>
+    <string name="title_artikel">Artikel Terkait</string>
+    <string name="view_all">View All</string>
+    <string name="descImg">inigambarList</string>
+    <string name="simpan">Simpan ke Inventory</string>
+    <string name="jml_transaksi">0</string>
+    <string name="jml_tukar">0</string>
+    <string name="content_riwayat">Maaf! Data Masih Kosong</string>
+    <string name="des_profil">Profil</string>
+    <string name="back">back</string>
+    <string name="nama">Nama</string>
+    <string name="email">email</string>
+    <string name="telephone">telephone</string>
+
+
+    <string-array name="data_judul">
+        <item>Tantangan Global: Mengatasi Krisis Sampah di Era Modern</item>
+        <item>Inovasi dalam Pengelolaan Sampah: Solusi untuk Masa Depan yang Lebih Bersih</item>
+    </string-array>
+
+    <string-array name="data_sub">
+        <item>Salah seorang ulama dan khatib terkemuka di Masjid Besar Kasultanan Yogyakarta pada masa itu, dan ibu dari K.H. Ahmad Dahlan adalah puteri dari H. Ibrahim yang juga menjabat penghulu Kesultanan Ngayogyakarta Hadiningrat pada masa itu. KH. Ahmad Dahlan telah mempelopori kebangkitan ummat Islam untuk menyadari nasibnya sebagai bangsa terjajah yang masih harus belajar dan berbuat. </item>
+        <item>Jenderal TNI Anumerta Ahmad Yani (juga dieja Achmad Yani; lahir di Purworejo, Jawa Tengah, 19 Juni 1922 – meninggal di Lubang Buaya, Jakarta, 1 Oktober 1965 pada umur 43 tahun) adalah komandan Tentara Nasional Indonesia Angkatan Darat, dan dibunuh oleh anggota Gerakan 30 September saat mencoba untuk menculik dia dari rumahnya.</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/image_artikel</item>
+        <item>@drawable/image_artikel</item>
+    </integer-array>
+
+
 </resources>
+
