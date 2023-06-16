@@ -6,29 +6,16 @@ import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager.widget.ViewPager
-import com.airbnb.lottie.LottieAnimationView
 import com.example.buangin_v1.MainActivity
 import com.example.buangin_v1.R
 import com.example.buangin_v1.adapter.ListArtikelAdapter
-import com.example.buangin_v1.adapter.PagerAdapter
 import com.example.buangin_v1.data.Artikel
-import com.example.buangin_v1.data.Sampah
-import com.example.buangin_v1.data.SampahHelper
-import com.example.buangin_v1.databinding.ActivityHasilScanBinding
-import com.example.buangin_v1.ui.fragment.Inventory
-import com.example.buangin_v1.ui.fragment.Plastik
 import com.google.android.material.button.MaterialButton
-import org.json.JSONArray
-import org.json.JSONException
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -85,23 +72,6 @@ class HasilScan : AppCompatActivity() {
             saveScanResult(jenisSampahValue, hargaSampahValue)
             Log.d( saveScanResult(jenisSampahValue, hargaSampahValue).toString(),"Ini isi shared preferance")
 
-            //rv
-//            val fragment = Plastik()
-//            val bundle = Bundle()
-//            bundle.putString("jenis", trashItemsTextView.text.toString() )
-//            bundle.putString("harga", hargaTextView.text.toString() )
-//            bundle.putString("jumlah", jumlahTextView.text.toString() )
-//            fragment.arguments = bundle
-//            Log.d(fragment.arguments.toString(),"ini hasil bundle")
-//            if(fragment.arguments != null){
-//                Toast.makeText(applicationContext, "Data Tersimpan", Toast.LENGTH_LONG).show()
-//            }else{
-//                Toast.makeText(applicationContext, "Data belum disimpan", Toast.LENGTH_LONG).show()
-//            }
-
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//            finish()
 
         }
     }

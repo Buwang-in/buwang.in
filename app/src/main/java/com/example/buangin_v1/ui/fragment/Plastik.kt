@@ -1,25 +1,16 @@
 package com.example.buangin_v1.ui.fragment
 
-import android.content.ClipData
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.buangin_v1.R
-import com.example.buangin_v1.adapter.ListArtikelAdapter
-import com.example.buangin_v1.adapter.PagerAdapter
-import com.example.buangin_v1.adapter.SampahAdapter
 import com.example.buangin_v1.adapter.ScanResultAdapter
-import com.example.buangin_v1.data.Artikel
-import com.example.buangin_v1.data.Sampah
 import com.example.buangin_v1.data.ScanResult
 
 

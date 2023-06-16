@@ -1,5 +1,6 @@
 package com.example.buangin_v1.adapter
 
+import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,6 +36,11 @@ class ListArtikelAdapter(private val listArtikel: ArrayList<Artikel>) : Recycler
         holder.imgPhoto.setImageResource(photo)
         holder.tvJudul.text = judul
         holder.tvSub.text = subJudul
+
+        holder.tvJudul.ellipsize = TextUtils.TruncateAt.END
+        holder.tvJudul.maxLines = 1
+        holder.tvSub.ellipsize = TextUtils.TruncateAt.END
+        holder.tvSub.maxLines = 1
     }
 
     interface OnItemClickCallback {
